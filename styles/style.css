@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sky {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: #8A2BE2; /* Roxo */
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: animateStars linear infinite;
+}
+
+.star1 {
+  top: 10%;
+  left: 20%;
+  animation-duration: 10s;
+}
+
+.star2 {
+  top: 30%;
+  left: 50%;
+  animation-duration: 15s;
+}
+
+.star3 {
+  top: 50%;
+  left: 80%;
+  animation-duration: 20s;
+}
+
+@keyframes animateStars {
+  from {
+      transform: translateY(0) translateX(0);
+  }
+  to {
+      transform: translateY(-100vh) translateX(100vw);
+  }
+}
+
+
