@@ -4,29 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/output.css" />
-    
   </head>
-  <body class="bg-gray-900">
-    <div class="sky relative">
-        <!-- Estrelas -->
-        <div class="star star1"></div>
-        <div class="star star2"></div>
-        <div class="star star3"></div>
-        <!-- Adicione mais estrelas conforme necessário -->
-    </div>
-    <header>
-      <div>
-        <a href="">LucasDev</a>
-        <a href="">Educação</a>
-        <a href="">Experiencia</a>
-      </div>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+  <body class="font-open-sans">
+    <div class="galaxy"></div>
+
+    <header class="flex justify-center items-center mt-5">
+      <div
+        class="flex items-center justify-center bg-[rgb(255,255,255,0.10)] rounded-full px-8 py-4 gap-8"
+      >
+        <div class="flex items-center gap-8">
+          <img class="w-5 h-5" src="assets/logo2.png" alt="logo" />
+          <a class="text-[#7F5AF0] hover:text-[#7543f2]" href="/">Educação</a>
+          <a class="text-[#7F5AF0] hover:text-[#7543f2]" href="/"
+            >Experiencia</a
+          >
+        </div>
+        <div class="flex justify-center items-center gap-6">
+          <a href="">
+            <img class="w-5 h-5" src="assets/email.png" alt="email" />
+          </a>
+          <a href="">
+            <img class="w-5 h-5" src="/assets/LinkedIn.png" alt="LinkedIn" />
+          </a>
+          <a href="">
+            <img class="w-5 h-5" src="assets/github.png" alt="github" />
+          </a>
+        </div>
       </div>
     </header>
-    
+
+    <main class="flex items-center justify-center mt-[100px] gap-8">
+      <div class="flex justify-self-start flex-col w-[600px]">
+        <h1 class="font-roboto text-[#7f5af0] text-[47px]">
+          <span class="text-white">Eu sou</span> Lucas Geremias
+        </h1>
+        <p class="font-roboto text-base mt-6 text-[#7f5af0]">
+          "Desenvolvedor comprometido com qualidade, paixão pela excelência
+          técnica, focado em soluções eficientes. <span class="text-white"> Experiência em C#, JavaScript,
+          TypeScript, Entity Framework e Node.js.</span> Busco desafios para
+          crescimento profissional e contribuição em projetos inovadores."
+        </p>
+        <div class="flex items-center justify-self-start gap-10 mt-16">
+          <a class="py-5 px-5 bg-[#7f5af0] text-white rounded-xl w-[160px] h-[50px]" href=""> Projetos </a>
+          <div class="flex items-center justify-center gap-1">
+            <a class="py-5 px-5 bg-[#f0f0f0] text-black rounded-xl w-[160px] h-[50px]" href=""> Contato </a>
+            <img src="assets/telegram.png" alt="telegram" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="rounded-full border-indigo-500/50"
+          src="https://avatars.githubusercontent.com/u/44319767?v=4"
+          alt="desenvolvedor Lucas"
+        />
+      </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
