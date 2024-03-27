@@ -45,3 +45,17 @@ body {
     opacity: 0;
   }
 }
+
+#typed-text::after {
+  content: '|'; /* Simulando o cursor de digitação */
+  animation: blink .7s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
